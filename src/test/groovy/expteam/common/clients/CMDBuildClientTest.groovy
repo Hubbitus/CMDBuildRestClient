@@ -17,10 +17,10 @@ import spock.lang.Specification
  * @created 27-04-2015 11:31 AM
  **/
 class CMDBuildClientTest extends Specification {
-	@Shared CMDBuildClient client = new CMDBuildClient('http://192.168.100.206:8080/cmdbuild/services/rest/v1/', 'admin', 'test');
+	@Shared CMDBuildClient client = new CMDBuildClient('http://192.168.100.206:8080/cmdbuild/services/rest/v2/', 'admin', 'test');
 
 	def "Auth"(){
-		CMDBuildClient badClient = new CMDBuildClient('http://192.168.100.206:8080/cmdbuild/services/rest/v1/', 'admin', 'WRONG PASS');
+		CMDBuildClient badClient = new CMDBuildClient('http://192.168.100.206:8080/cmdbuild/services/rest/v2/', 'admin', 'WRONG PASS');
 		when:
 			badClient.get(path: 'lookup_types')
 		then:

@@ -1,0 +1,5 @@
+[gerrit]
+host=gerrit.expteam.work
+port=29418
+project=CMDBuildClient
+defaultrebase=0
