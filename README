@@ -4,7 +4,7 @@ For examples of usage see groovy-doc of class and tests.
 
 Simple usage example:
 ```
-	client = new CMDBuildClient('http://192.168.100.206:8080/cmdbuild/services/rest/v1/', 'Login', 'Password');
+	client = new CMDBuildClient('http://192.168.100.206:8080/cmdbuild/services/rest/v2/', 'Login', 'Password');
 	def res client.get(path: '')
 
 	println "Operation status: ${res.status}"
