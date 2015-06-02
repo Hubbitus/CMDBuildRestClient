@@ -43,6 +43,12 @@ import static groovyx.net.http.ContentType.JSON
  *	]
  * );
  *
+ * Unfortunately there no possibility use CQL like HQL, so many requests needed, even for lookups take by name:
+ * See:
+ * http://www.cmdbuild.org/forum/forum-in-english/430046613?set_language=en&cl=en
+ * http://www.cmdbuild.org/forum/forum-in-english/304195182
+ * http://www.cmdbuild.org/forum/forum-in-english/909278360/view
+ *
  * @author Pavel Alexeev <Pahan@Hubbitus.info>
  * @created 27.04.2015 13:51:50
  **/
